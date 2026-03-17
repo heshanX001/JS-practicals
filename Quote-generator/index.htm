@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div>
+        <h1 id="quote">Click the button to get your quote !</h1>
+        <button id="btn-gen">Get Your Quote</button>
+    </div>
+    
+    <script>
+        const quote = document.getElementById("quote");
+        const btnGen = document.getElementById("btn-gen");
+
+        let quotes = [
+            "“Growth begins the moment you step outside your comfort zone.”",
+            "“The life you want is built on the habits you repeat every day.”",
+            "“Pain is not your enemy; it is your greatest teacher.”",
+            "“You don’t find yourself—you create yourself.”",
+            "“Time doesn’t wait, but it always reveals.”",
+            "“Your mindset shapes the reality you live in.”",
+            "“Success is quiet; it grows in the unseen hours.”",
+            "“The strongest people are built through the hardest battles.”",
+            "“Discipline will take you where motivation cannot.”",
+            "“Every ending is a hidden beginning.”",
+            "“You become what you consistently believe about yourself.”",
+            "“Small steps today create massive change tomorrow.”",
+            "“Fear is just a sign that something important is ahead.”",
+            "“Don’t chase comfort—chase purpose.”",
+            "“Your past is a lesson, not a life sentence.”",
+            "“Clarity comes from action, not overthinking.”",
+            "“The hardest choices often lead to the best outcomes.”",
+            "“You are stronger than your excuses.”",
+            "“Dreams work only when you do.”",
+            "“The more you risk, the more you grow.”",
+            "“Silence often speaks louder than words.”",
+            "“Your future is created by what you do today, not tomorrow.”",
+            "“Strength is built when no one is watching.”",
+            "“Failure is not falling down, but refusing to rise.”",
+            "“You don’t need perfect conditions to start.”",
+            "“The mind is powerful—feed it wisely.”",
+            "“Your limits exist only in your beliefs.”",
+            "“Be patient; great things take time.”",
+            "“What you focus on expands in your life.”",
+            "“Become the person your younger self needed.”",
+            "“The more you love, The more u suffer.”"
+        ];
+        
+        function assignQuote(){
+            let number = Math.floor(Math.random() * 30);
+            quote.innerHTML = quotes[number];
+        }
+        btnGen.addEventListener("click", assignQuote);
+
+
+
+    </script>
+</body>
+
+</html>
