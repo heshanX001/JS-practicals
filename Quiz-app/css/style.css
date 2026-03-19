@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tagesschrift&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    color: wheat;
+}
+body{
+    background: linear-gradient(to right, rgb(1, 32, 59),rgb(47, 6, 88));
+}
+.container{
+    border: 2px solid wheat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz{
+    background-color: rgba(0, 129, 62, 0.225);
+    backdrop-filter: blu(45px);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 60%;
+    height: auto;
+    padding: 3%;
+}
+.quiz h2{
+    font-size: 2rem;
+    padding-bottom: 3%;
+    border-bottom: 4px solid wheat;
+    border-radius: 4px;
+    width: fit-content;
+}
+#question{
+    font-size: 1.3rem;
+    padding: 5% 0% 0% 0%;
+}
+.answers{
+    width: 90%;
+}
+#question-number{
+    font-size: 1rem;
+    padding: 2% 0% 2% 0%;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+}
+.answers button{
+    text-align: left;
+    color: black;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2%;
+    margin: 2% 2% 2% 0%;
+}
+#next-btn{
+    width: 20%;
+    padding: 2%;
+    color: black;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width:530px) {
+    .quiz h2{
+        font-size: 1.1rem;
+    }
+    #question{
+        font-size: .9rem;
+    }
+    .answers button{
+        font-size: .8rem;
+    }
+    #question-number{
+        font-size: .8rem;
+    }
+    #next-btn{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .quiz h2{
+        font-size: 1rem;
+    }
+    #question{
+        font-size: .8rem;
+    }
+    .answers button{
+        font-size: .7rem;
+    }
+    #question-number{
+        font-size: .8rem;
+    }
+    #next-btn{
+        font-size: .7rem;
+    }
+}
