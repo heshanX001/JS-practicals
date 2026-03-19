@@ -83,6 +83,15 @@ body{
     border-color: rgb(65, 65, 255);
     background-color: rgb(65, 65, 255);
 }
+#next-btn{
+    width: 20%;
+    padding: 2%;
+    color: black;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 @media screen and (max-width:530px) {
     .quiz h2{
