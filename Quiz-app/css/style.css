@@ -10,7 +10,6 @@ body{
     background: linear-gradient(to right, rgb(1, 32, 59),rgb(47, 6, 88));
 }
 .container{
-    border: 2px solid wheat;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -18,7 +17,7 @@ body{
     align-items: center;
 }
 .quiz{
-    background-color: rgba(0, 129, 62, 0.225);
+    background-color: rgba(158, 158, 158, 0.228);
     backdrop-filter: blu(45px);
     border-radius: 25px;
     display: flex;
@@ -38,20 +37,21 @@ body{
 }
 #question{
     font-size: 1.3rem;
-    padding: 5% 0% 0% 0%;
+    padding: 5% 0% 2% 0%;
 }
-.answers{
+#answers{
     width: 90%;
 }
 #question-number{
     font-size: 1rem;
     padding: 2% 0% 2% 0%;
 }
-.answers{
+#answers{
     display: flex;
     flex-direction: column;
 }
-.answers button{
+#answers button{
+    width: 110%;
     text-align: left;
     color: black;
     border: 1px solid wheat;
@@ -60,7 +60,7 @@ body{
     font-weight: 600;
     padding: 2%;
     margin: 2% 2% 2% 0%;
-    transition: .4s;
+    transition: .2s;
 }
 #next-btn{
     background-color: rgb(42, 42, 162);
@@ -73,24 +73,26 @@ body{
     font-weight: 700;
     transition: .4s;
 }
-.answers button:hover{
+#answers button:hover:not([disabled]){
     color: wheat;
     border-color: rgb(51, 50, 50);
     background-color: rgb(51, 50, 50);
 }
+
+#answers button:disabled{
+    cursor: no-drop;
+}
+
 #next-btn:hover{
     color: wheat;
     border-color: rgb(65, 65, 255);
     background-color: rgb(65, 65, 255);
 }
-#next-btn{
-    width: 20%;
-    padding: 2%;
-    color: black;
-    border: 2px solid wheat;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 700;
+.correct{
+    background-color: chartreuse;
+}
+.incorrect{
+    background-color: tomato;
 }
 
 @media screen and (max-width:530px) {
@@ -124,6 +126,6 @@ body{
         font-size: .8rem;
     }
     #next-btn{
-        font-size: .7rem;
+        font-size: .6rem;
     }
 }
