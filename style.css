@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Tagesschrift&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    color: wheat;
+}
+body{
+    background: linear-gradient(to right,#002054, #020032);
+}
+.container{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+}
+.container h1{
+    color: wheat;
+    margin: 2%;
+    padding-bottom: 2%;
+    border-bottom: 5px solid wheat;
+    border-radius: 5px;
+    width: fit-content;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-image: url("./bgHome.jpg");
+    backdrop-filter: blur(45px);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    width: 300px;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 0px 0px 5px rgb(0, 255, 179);
+}
+.card h2{
+    padding-bottom: 10%;
+}
+.card p{
+    padding-bottom: 5%;
+}
+.card a{
+    border-radius: 10px;
+    text-align: center;
+    color: wheat;
+    width: 50%;
+    text-decoration: none;
+    background-color: rgb(0, 56, 135);
+    padding: 2%;
+    transition: 0.3s;
+}
+.project-content{
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.card a:hover{
+    background-color: rgb(0, 106, 255);
+}
+
+@media screen and (max-width:430px) {
+    .container h1{
+        font-size: 1.6rem;
+    }
+    .card h2{
+        font-size:1.5rem;
+    }
+}
