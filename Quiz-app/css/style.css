@@ -96,14 +96,17 @@ body{
 }
 
 @media screen and (max-width:530px) {
+    .quiz{
+        width: 80%;
+    }
     .quiz h2{
         font-size: 1.1rem;
     }
     #question{
-        font-size: .9rem;
+        font-size: 1rem;
     }
     .answers button{
-        font-size: .8rem;
+        font-size: .5rem;
     }
     #question-number{
         font-size: .8rem;
@@ -113,19 +116,23 @@ body{
     }
 }
 @media screen and (max-width:400px) {
+    .quiz{
+        width: 80%;
+    }
     .quiz h2{
         font-size: 1rem;
     }
     #question{
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .answers button{
-        font-size: .7rem;
+        font-size: 1px;
     }
     #question-number{
         font-size: .8rem;
     }
     #next-btn{
-        font-size: .6rem;
+        width: 50%;
+        font-size: .8rem;
     }
 }
