@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: "Outfit", sans-serif;
-    color: wheat;
+    color: rgb(255, 245, 228);
 }
 body{
     background: linear-gradient(to right,#000e26, #1e0032);
@@ -17,20 +17,26 @@ body{
     flex-direction:column;
 }
 .container h1{
-    color: wheat;
-    margin: 2%;
-    padding-bottom: 2%;
-    border-bottom: 5px solid wheat;
+    position: relative;
+    color: rgb(221, 250, 124);
+    padding: 3%;
     border-radius: 5px;
-    width: fit-content;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    background-image: url("./bgHome.jpg");
-    backdrop-filter: blur(45px);
+.container h1::after{
+    content:'';
+    position: absolute;
+    background-image: url('./js-logo.png');
     background-position: center;
     background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.card{
+    background-color:rgba(1, 18, 47, 0.848);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(100px);
     border-radius: 15px;
     width: 300px;
     margin: 2%;
@@ -39,6 +45,7 @@ body{
 }
 .card h2{
     padding-bottom: 10%;
+    color: rgb(251, 250, 249);
 }
 .card p{
     padding-bottom: 5%;
@@ -66,6 +73,7 @@ body{
 
 @media screen and (max-width:430px) {
     .container h1{
+        padding: 5%;
         font-size: 1.6rem;
     }
     .card h2{
