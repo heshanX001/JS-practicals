@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App | By DevHesh</title>
+    
+    <link rel="icon" type="image/png" href="./src/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 <body>
     <div class="weatherApp">
-
         <div class="search-city">
             <input 
                 type="text"
                 placeholder="Enter City"
-                required>
+                required id="inputCity">
             <button id="search-button">Search</button>
         </div>
-
         <div class="details">
             <img src="./src/clear.png" alt="condition" id="condition">
             <p id="city">New York</p>
+            <p id="country">Country</p>
 
             <div class="other-details">
                 <div class="extra-details">
-                    <img src="./src/tempreature.png" alt="temp" id="temp">
+                    <img src="./src/tempreature.png" alt="temp">
                     <p id="temp-value">27 ℃<p>
                     <p class="detail-name">Tempreature</p>
                 </div>
                 <div class="extra-details">
-                    <img src="./src/humidity.png" alt="humid" id="humid">
+                    <img src="./src/humidity.png" alt="humid">
                     <p id="humid-value">97 %</p>
                     <p class="detail-name">Humidity</p>
                 </div>
                 <div class="extra-details">
-                    <img src="./src/wind.png" alt="wind" id="wind">
+                    <img src="./src/wind.png" alt="wind">
                     <p id="wind-value">12 km/h</p>
                     <p class="detail-name">Wind</p>
                 </div>
             </div>
         </div>
 
+        <p id="apiProvider">Powered By @ &nbsp;&nbsp;&nbsp;<a href="">OpenWeather API</a></p>
     </div>
+    <script src="./script/weatherApp.js"></script>
 </body>
 </html>
