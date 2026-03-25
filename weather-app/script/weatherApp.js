@@ -15,7 +15,7 @@ const apiKey = '6c3764250b193fda70e0aeb4dfc34b3c';
 
 searchBtn.addEventListener('click',()=>{
     try{
-        let city = inputCity.value;
+        let city = inputCity.value.trim(); //remove Spaces after or before city name :)
         if(city == ''){
             alert("Enter a City to Proceed");
         }
