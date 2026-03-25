@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | By DevHesh</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="weatherApp">
+
+        <div class="search-city">
+            <input 
+                type="text"
+                placeholder="Enter City"
+                required>
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="details">
+            <img src="./src/clear.png" alt="condition" id="condition">
+            <p id="city">New York</p>
+
+            <div class="other-details">
+                <div class="extra-details">
+                    <img src="./src/tempreature.png" alt="temp" id="temp">
+                    <p id="temp-value">27 ℃<p>
+                    <p class="detail-name">Tempreature</p>
+                </div>
+                <div class="extra-details">
+                    <img src="./src/humidity.png" alt="humid" id="humid">
+                    <p id="humid-value">97 %</p>
+                    <p class="detail-name">Humidity</p>
+                </div>
+                <div class="extra-details">
+                    <img src="./src/wind.png" alt="wind" id="wind">
+                    <p id="wind-value">12 km/h</p>
+                    <p class="detail-name">Wind</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
