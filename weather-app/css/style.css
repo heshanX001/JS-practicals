@@ -205,6 +205,9 @@ body {
     .other-details img{
         width: 30px;
     }
+    #apiProvider, #apiProvider a{
+        font-size: .8rem;
+    }
 }
 @media screen and (max-width:500px) {
     .weatherApp{
@@ -222,6 +225,9 @@ body {
 @media screen and (max-width:350px) {
     .weatherApp{
         width: 90%;
+    }
+    #apiProvider, #apiProvider a{
+        font-size: .6rem;
     }
 }
 @media screen and (max-width:330px) {
